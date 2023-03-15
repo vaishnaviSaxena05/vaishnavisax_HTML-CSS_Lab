@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<Style>
+    .menu-styling {
+        list-style-type: none;
+        background-color: lightgrey;
+        padding: 0px;
+        margin: 0%;
+
+    }
+
+    #sub-menu-1 {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 150px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+
+
+
+    }
+
+    #main-menu-item-2 {
+        position: relative;
+    }
+
+    #main-mainu {
+        list-style-type: none;
+        background-color: grey;
+    }
+
+    #main-mainu>li {
+        display: inline;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    #main-mainu>li>a {
+        display: inline-block;
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+    }
+
+    #main-mainu>li>a:hover {
+        background-color: black;
+    }
+
+    #main-menu-item-2:hover #sub-menu-1 {
+
+        display: block;
+    }
+
+    #main-menu-item-3:hover #sub-menu-1 {
+
+        display: block;
+    }
+
+    div {
+        background-color: red;
+        height: 70px;
+        position: sticky;
+        margin: 0%;
+
+
+
+    }
+
+    h2 {
+
+        margin: 0%;
+        padding: 20px;
+        text-align: right;
+        font-size: 40px;
+
+    }
+
+    #sub-menu-1>li>a {
+        float: none;
+        color: rgb(93, 93, 177);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+
+    }
+
+    #sub-menu-1 a:hover {
+        background-color: #ddd;
+    }
+
+    body {
+        height: auto;
+        margin: 0%;
+    }
+</Style>
+
+<body>
+    <div>
+        <h2>Demo of Dropdown</h2>
+    </div>
+    <nav>
+        <ul id="main-mainu" class="menu-styling">
+            <li id="main-menu-item-1">
+                <a href="/link1">Link 1</a>
+
+            </li>
+            <li id="main-menu-item-2">
+                <a href="/link2">Link 2</a>
+                <ul id="sub-menu-1" class="menu-styling">
+                    <li>
+                        <a href="/dd-link-1">DD-Link_1</a>
+                    </li>
+                    <li>
+                        <a href="/dd-link-2">DD-Link_2</a>
+                    </li>
+                    <li>
+                        <a href="/dd-link-3">DD-Link_3</a>
+                    </li>
+                </ul>
+            </li>
+            <li id="main-menu-item-3">
+                <a href="/link3">Link 3</a>
+                <ul id="sub-menu-1" class="menu-styling">
+                    <li>
+                        <a href="/dd-link-1">DD-Link_1</a>
+                    </li>
+                    <li>
+                        <a href="/dd-link-2">DD-Link_2</a>
+                    </li>
+                    <li>
+                        <a href="/dd-link-3">DD-Link_3</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>
